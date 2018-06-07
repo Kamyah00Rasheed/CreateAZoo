@@ -1,4 +1,6 @@
-package com.company;
+package com.company.animal;
+
+import com.company.animal.Animal;
 
 public class Penguin extends Animal {
 
