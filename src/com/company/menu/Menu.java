@@ -21,7 +21,8 @@ public class Menu {
 
                 case 1:
                     //Manage People
-                    managePeople();
+                    PeopleMenu peopleMenu= new PeopleMenu();
+                    peopleMenu.managePeople();
                     break;
                 case 2:
                     //Manage animals

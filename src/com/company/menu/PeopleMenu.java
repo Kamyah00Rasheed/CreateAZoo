@@ -7,7 +7,7 @@ public class PeopleMenu {
     private Scanner input = new Scanner(System.in);
 
 
-    private void managePeople() {
+    protected void managePeople() {
 
         try {
             System.out.println("Are you " +  //Find out what type of people we need to manage.
@@ -22,9 +22,11 @@ public class PeopleMenu {
                     break;
                 case 2:
                     //handle visitor
+                    manageVisitor();
                     break;
                 case 3:
-                    mainMenu();
+                    Menu menu = new Menu();
+                    menu.mainMenu();
                     break;
                 case 4:
                     System.out.println("Thank you or using the Zoo Program.");
@@ -40,6 +42,10 @@ public class PeopleMenu {
             managePeople();
         }
 
+    }
+
+    private void manageVisitor() {
+        
     }
 
     private void manageEmployee() {
