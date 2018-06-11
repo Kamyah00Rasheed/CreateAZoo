@@ -161,6 +161,7 @@ public class PeopleMenu {
             System.out.println("What is the employee's hire date?");
             String employeeHireDate = input.nextLine();
             Employees newEmployee = new Employees(employeeAge, employeeName, employeeGender, employeeRace, employeeNumber,employeeTitle, employeeHireDate);
+            // TODO Add Employee to employee list
         }
         else if (location == 2){
 
