@@ -1,11 +1,15 @@
 package com.company.people;
 
+import java.util.List;
+
 public class Employees extends People {
 
     private int employeeNumber;
     private String job;
     private String hireDate;
     private int hours;
+
+    private List<Employees> employeesList; 
 
 
     public Employees(int age, String name, char gender, String race, int employeeNumber, String job, String hireDate) {
